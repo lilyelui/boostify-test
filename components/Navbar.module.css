@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    height: 5rem;
+    padding-left: 0; /* Remove padding to ensure no extra space on the left */
+    padding-right: 0;
+  }
+  
+  .logoContainer {
+    flex: 1;
+    padding-left: 2rem;
+  }
+  
+  .logo {
+    height: 10.5rem;
+    margin-left: 1rem;
+  }
+  
+  .navbarContainer {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem; /* Reduce to move navbar left */
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    /* background-color: #F3EDC8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem; */
+    gap: 1rem; /* Reduce gap between links */
+  }
+  
+  .signIn {
+    color: #b91c1c;
+    font-weight: bold;
+    margin-right: 1rem; /* Adjust this to move Sign In closer to the navbar */
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 0rem; /* Reduce gap to bring links closer together */
+    margin-left: 1; /* Ensure no extra margin on the left */
+  }
+  
+  .navLink {
+    color: #7D0A0A;
+    font-weight: medium;
+    text-decoration: none;
+  }
+  
+  .navLink:hover {
+    color: #7D0A0A;
+  }
+  
