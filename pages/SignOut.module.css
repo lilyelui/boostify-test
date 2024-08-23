@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 300px;
+  background-color: #7D0A0A;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #EAD196;
+  margin-bottom: 50px;
+}
+
+.buttons {
+  display: flex;
+  gap: 40px;
+  align-items: center; /* Memastikan tombol dalam satu garis secara vertikal */
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAD196; /* Warna container */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  height: 80px;
+}
+
+.goBackButtonContainer {
+  background-color: #F3EDC8; /* Warna khusus untuk container "Go Back" */
+}
+
+.confirmButtonContainer {
+  background-color: #EAD196; /* Warna khusus untuk container "Yes" */
+}
+
+.button {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  color: #7D0A0A;
+}
+
+.goBackButton,
+.confirmButton {
+  background-color: transparent;
+  color: #7D0A0A;
+}
+
+.goBackButton:hover,
+.confirmButton:hover {
+  opacity: 0.9;
+}

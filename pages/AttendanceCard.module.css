@@ -1,0 +1,97 @@
+.main {
+  flex: 1;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+}
+
+.filterSection {
+  margin: 20px auto;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filterLabel {
+  font-size: 18px;
+  margin-right: 20px;
+  color: #4A4A4A;
+}
+
+.datePicker {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.attendanceList {
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 600px;
+  margin-bottom: 80px;
+}
+
+.card {
+  background-color: #EAD196;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+  color: #4A4A4A;
+}
+
+.left p {
+  font-size: 18px;
+  color: #4A4A4A;
+}
+
+.right p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4A4A4A;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #7D0A0A;
+  color: #EAD196;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pagination button:hover {
+  background-color: #660707;
+  color: #EAD196;
+}
+
+.right p {
+  font-size: 18px; /* Ubah ukuran font sesuai keinginan */
+  font-weight: bold;
+  color: #4A4A4A; /* Ubah warna font sesuai keinginan */
+}

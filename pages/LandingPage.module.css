@@ -55,27 +55,17 @@
   margin-bottom: 40px; /* Adjust this value to increase spacing below the button */
 }
 
-.title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #4B5563;
-}
-
-.description {
-  font-size: 1.125rem;
-  color: #6B7280;
-  margin-top: 24px;
-}
 
 .attendanceButton {
-  background-color: #F87171;
-  color: white;
+  background-color: #7D0A0A;
+  color: #EAD196;
   padding: 12px 24px;
   border-radius: 8px;
   font-size: 1.125rem;
   font-weight: semibold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 32px; /* Add margin-top here to control space above the button */
+  transform: translateX(30%);
 }
 
 .imageSection {
@@ -120,3 +110,126 @@
 .footerIcon {
   height: 1.25rem;
 }
+
+
+
+
+
+
+.attendanceButton:hover {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+.imageSection {
+  flex: 1;
+}
+
+.smileImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.modeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #515151;
+}
+  
+.description {
+    font-size: 1.125rem;
+    color: #515151;
+    margin-top: 24px;
+}
+
+
+.dark-mode {
+  background-color: #0D0D0D; /* Warna background untuk dark mode */
+  color: #ffffff; /* Warna teks default untuk dark mode */
+}
+
+.dark-mode .title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #BDBDBD; /* Warna title untuk dark mode */
+  transform: translateX(10%);
+  width: 50%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.dark-mode .description {
+  color: #d3d3d3; /* Warna description untuk dark mode */
+  width: 40%;
+  margin-top: 24px;
+  text-align: left;
+  transform: translateX(12%);
+  text-align: justify;
+}
+
+
+
+.dark-mode .attendanceButton{
+  background-color: #5B0A0A;
+  color: #D7B66A;
+  transform: translateX(30%);
+}
+
+.dark-mode .imageSection {
+  flex: 1;
+}
+
+.dark-mode .smileImage {
+  max-width: 300%;
+  height: auto;
+  transform: translateX(-100%);
+
+}
+
+.light-mode {
+  background-color: #ffffff; /* Warna background untuk light mode */
+  color: #3F3C38; /* Warna teks default untuk light mode */
+}
+
+.light-mode .title {
+  color: #333333; /* Warna title untuk light mode */
+  width: 50%;
+  text-align: left;
+  margin-bottom: 40px;
+  transform: translateX(10%);
+}
+
+.light-mode .description {
+  color: #3F3C38; /* Warna description untuk light mode */
+  width: 40%;
+  margin-top: 24px;
+  text-align: left;
+  transform: translateX(12%);
+  text-align: justify;
+}
+
+
+.light-mode .imageSection {
+  flex: 1;
+}
+
+.light-mode .smileImage {
+  max-width: 300%;
+  height: auto;
+  transform: translateX(-100%); /* Geser gambar ke kiri sebesar 20% */
+  
+}
+

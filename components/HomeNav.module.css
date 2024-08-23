@@ -1,0 +1,111 @@
+
+  /* Dark mode toggle icon */
+  .modeToggle img {
+    width: 28px; /* Adjust the size as needed */
+    height: 28px;
+    transition: transform 0.3s ease;
+  }
+  
+  .modeToggle img:hover {
+    transform: rotate(20deg); /* Adds a slight rotation on hover */
+  }
+  
+  /* Existing CSS */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    height: 5rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .logoContainer {
+    flex: 1;
+    padding-left: 0,5rem;
+  }
+  
+  .logo {
+    height: 10.5rem;
+    margin-left: 1rem;
+  }
+  
+  .navbarContainer {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    gap: 1rem; /* Space between navbar items */
+  }
+  
+  .signOut {
+    font-weight: bold; /* Make "Sign Out" bold */
+  
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 1.5rem; /* Consistent space between links */
+    margin-left: 0; /* Removed extra margin */
+    align-items: center; /* Vertically align the links */
+  }
+  
+  .navLink {
+    color: #7D0A0A;
+    font-weight: medium;
+    text-decoration: none;
+    margin-right: 0; /* Reset margin to be consistent */
+  }
+  
+  .navLink:hover {
+    color: #7D0A0A;
+  }
+  
+  .profileButton {
+    background-color: #EAD196;
+    color: #7D0A0A;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* Light Mode Styles */
+.light-mode {
+  background-color: #FFFFFF; /* Background untuk light mode */
+  color: #000000; /* Warna teks untuk light mode */
+}
+
+.light-mode .navLink {
+  color: #7D0A0A; /* Warna link untuk light mode */
+  
+}
+
+.light-mode .profileButton {
+  background-color: #EAD196; /* Warna background untuk tombol profil */
+  color: #7D0A0A; /* Warna teks untuk tombol profil */
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #0D0D0D; /* Background untuk dark mode */
+  color: #D7B66A; /* Warna teks untuk dark mode */
+}
+
+.dark-mode .navLink {
+  color: #D7B66A; /* Warna link untuk dark mode */
+}
+
+.dark-mode .profileButton {
+  background-color: #D7B66A; 
+  color: #5B0A0A;
+}
+
+
+  

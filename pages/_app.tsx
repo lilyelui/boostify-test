@@ -1,19 +1,13 @@
-import { AppProps } from "next/app";
-import "../styles/globals.css";
-import React from "react";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
+import { ThemeProvider } from './ThemeContext'; // Pastikan path ini sesuai
 
-const App = ({ Component, pageProps }: AppProps) => {
-  const [queryClient] = React.useState(() => new QueryClient());
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <QueryClientProvider client={queryClient}>
-        <ReactQueryDevtools />
-        <Component {...pageProps} />
-      </QueryClientProvider>
-    </>
+    <ThemeProvider>
+      <Component {...pageProps} />
+    </ThemeProvider>
   );
-};
+}
 
-export default App;
+export default MyApp;

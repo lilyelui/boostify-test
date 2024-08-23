@@ -1,26 +1,25 @@
 import React from 'react';
-import styles from './Footer.module.css'; // Pastikan Anda sudah membuat file CSS untuk Footer
+import styles from './footer.module.css';
+import { useTheme } from '../pages/ThemeContext';
 
-const Footer: React.FC = () => {
+const Footer = () => {
+  const { isDarkMode } = useTheme();
   return (
-    <footer className={`${styles.footer} container mx-auto px-4`}>
-      <div className={styles.footerLinks}>
-        <a href="/about" className={styles.footerLink}>About</a>
-        <a href="/team" className={styles.footerLink}>Team</a>
-        <a href="mailto:info@boostify.com" className={styles.footerLink}>
+    <footer className={`${styles.footer} ${isDarkMode ? styles['dark-mode'] : ''}`}>
+      <div className={`${styles.footerLinks} ${isDarkMode ? styles['dark-mode'] : ''}`}>
+        <a href="/About" className={`${styles.footerLink} ${isDarkMode ? styles['dark-mode'] : ''}`}>About</a>
+        <a href="/Team" className={`${styles.footerLink} ${isDarkMode ? styles['dark-mode'] : ''}`}>Team</a>
+        <a href="mailto:info@boostify.com" className={`${styles.footerLink} ${isDarkMode ? styles['dark-mode'] : ''}`}>
           <img src="/email-icon.png" alt="Email Icon" className={styles.footerIcon} />
         </a>
-        <a href="https://www.linkedin.com/company/boostify" className={styles.footerLink}>
+        <a href="https://www.linkedin.com/company/boostify" className={`${styles.footerLink} ${isDarkMode ? styles['dark-mode'] : ''}`}>
           <img src="/linkedin-icon.png" alt="LinkedIn Icon" className={styles.footerIcon} />
         </a>
       </div>
-      <div className={styles.footerContent}>
-        <img src="/logofooter.png" alt="Logo" className={styles.footerLogo} />
-        <p className={styles.footerText}>© 2021 All Rights Reserved</p>
+      <div className={styles.logoContainer}>
+        <img src="/Boostify-cps.png" alt="Boostify Logo" style={{ height: '2rem', width: 'auto' }} />
       </div>
-      <div className="py-6 bg-red-600 text-white text-center">
-    
-      </div>
+      <p className={`${styles.footerText} ${isDarkMode ? styles['dark-mode'] : ''}`}>© 2021 All Rights Reserved</p>
     </footer>
   );
 };
